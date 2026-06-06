@@ -9,7 +9,7 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "PLN ULP Boja - Layanan Kelistrikan Modern & Handal",
+  title: "PLN ULP Boja",
   description: "Website Resmi Unit Layanan Pelanggan (ULP) Boja, Kabupaten Kendal. Temukan informasi layanan pasang baru, tambah daya, pengaduan gangguan, dan tips keselamatan kelistrikan.",
   keywords: ["PLN Boja", "PLN ULP Boja", "Kelistrikan Boja", "Pasang Baru PLN", "Tambah Daya PLN", "PLN Kendal"],
   authors: [{ name: "PLN ULP Boja" }],

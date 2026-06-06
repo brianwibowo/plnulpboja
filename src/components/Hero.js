@@ -52,29 +52,6 @@ export default function Hero() {
               Hubungi Petugas
             </a>
           </div>
-
-          {/* Quick Metrics */}
-          <div className="grid grid-cols-2 sm:flex sm:flex-wrap gap-x-8 gap-y-4 border-t border-zinc-100 pt-6 w-full">
-            <div className="flex items-center gap-3">
-              <div className="text-pln-blue bg-pln-blue/5 p-2 rounded-xl">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-              </div>
-              <div className="text-left">
-                <span className="block text-[9px] uppercase tracking-wider text-zinc-400 font-bold leading-none mb-0.5">Layanan</span>
-                <span className="block text-xs font-bold text-zinc-700">Reaksi Cepat 24 Jam</span>
-              </div>
-            </div>
-            
-            <div className="flex items-center gap-3">
-              <div className="text-pln-blue bg-pln-blue/5 p-2 rounded-xl">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-              </div>
-              <div className="text-left">
-                <span className="block text-[9px] uppercase tracking-wider text-zinc-400 font-bold leading-none mb-0.5">Prioritas</span>
-                <span className="block text-xs font-bold text-zinc-700">Aman & Sesuai SLO</span>
-              </div>
-            </div>
-          </div>
         </div>
 
         {/* Right Visual Column */}
