@@ -1,7 +1,5 @@
 "use client";
 
-import styles from "./Services.module.css";
-
 const services = [
   {
     id: "pasang-baru",
@@ -9,9 +7,9 @@ const services = [
     tag: "Populer",
     desc: "Ajukan penyambungan baru untuk rumah tangga, bisnis, maupun industri. Proses mudah dan terintegrasi dengan penghitungan biaya transparan.",
     icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
     ),
-    class: styles.span2,
+    spanClass: "lg:col-span-2",
     action: "Mulai Pengajuan"
   },
   {
@@ -20,9 +18,9 @@ const services = [
     tag: "Layanan",
     desc: "Kebutuhan listrik meningkat? Naikkan daya listrik Anda secara aman dengan prosedur resmi.",
     icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
     ),
-    class: styles.span1,
+    spanClass: "lg:col-span-1",
     action: "Naik Daya"
   },
   {
@@ -31,9 +29,9 @@ const services = [
     tag: "Layanan",
     desc: "Perubahan golongan tarif listrik (misalnya dari prabayar ke pascabayar atau sebaliknya).",
     icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 3L21 7L17 11M7 21L3 17L7 13"></path><path d="M3 17H21M21 7H3"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M17 3L21 7L17 11M7 21L3 17L7 13"></path><path d="M3 17H21M21 7H3"></path></svg>
     ),
-    class: styles.span1,
+    spanClass: "lg:col-span-1",
     action: "Migrasi"
   },
   {
@@ -42,9 +40,9 @@ const services = [
     tag: "Darurat 24 Jam",
     desc: "Laporan padam listrik, korsleting, atau bahaya kelistrikan lainnya. Tim teknis reaksi cepat kami siap meluncur ke lokasi Anda kapan saja.",
     icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
     ),
-    class: styles.span2,
+    spanClass: "lg:col-span-2",
     action: "Laporkan Gangguan"
   },
   {
@@ -53,9 +51,9 @@ const services = [
     tag: "Administrasi",
     desc: "Perubahan nama pelanggan, alamat tarif, atau koreksi data administratif kepemilikan kWh meter.",
     icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 1 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 1 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
     ),
-    class: styles.span1,
+    spanClass: "lg:col-span-1",
     action: "Ubah Data"
   },
   {
@@ -64,41 +62,48 @@ const services = [
     tag: "Konsultasi",
     desc: "Dapatkan saran teknis dan rekomendasi instalasi kelistrikan yang aman, hemat, dan sesuai standar SLO (Sertifikat Laik Operasi) langsung dari ahlinya.",
     icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
     ),
-    class: styles.span2,
+    spanClass: "lg:col-span-2",
     action: "Konsultasi"
   }
 ];
 
 export default function Services() {
   return (
-    <section id="layanan" className={styles.servicesSection}>
-      <div className="container">
-        <div className="section-header">
-          <span className="section-badge">Portal Layanan</span>
-          <h2 className="section-title">Solusi Kelistrikan Terintegrasi</h2>
-          <p className="section-subtitle">
+    <section id="layanan" className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="section-header mb-16 text-center max-w-2xl mx-auto flex flex-col items-center gap-3">
+          <span className="section-badge border border-zinc-200/50 bg-zinc-50 text-zinc-850 text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full inline-block">Portal Layanan</span>
+          <h2 className="section-title text-3xl sm:text-4xl font-extrabold text-zinc-900 tracking-tight">Solusi Kelistrikan Terintegrasi</h2>
+          <p className="section-subtitle text-zinc-500 text-sm sm:text-base leading-relaxed">
             Segala pengajuan dapat Anda lakukan dengan mudah dan transparan secara online.
           </p>
         </div>
 
         {/* Bento Grid */}
-        <div className={styles.bentoGrid}>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-16">
           {services.map((srv) => (
-            <div key={srv.id} className={`${styles.bentoCard} ${srv.class}`}>
-              <div className={styles.cardHeader}>
-                <div className={styles.iconWrapper}>{srv.icon}</div>
-                <span className={styles.cardTag}>{srv.tag}</span>
+            <div 
+              key={srv.id} 
+              className={`bg-white border border-zinc-200/60 rounded-2xl p-8 flex flex-col justify-between shadow-sm hover:shadow-md hover:border-zinc-300 transition-all duration-300 ${srv.spanClass}`}
+            >
+              <div>
+                <div className="flex justify-between items-center mb-6">
+                  <div className="w-11 h-11 rounded-xl bg-zinc-50 text-pln-blue flex items-center justify-center">
+                    {srv.icon}
+                  </div>
+                  <span className="bg-zinc-55 border border-zinc-100 text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full text-zinc-500">
+                    {srv.tag}
+                  </span>
+                </div>
+                <h3 className="text-lg font-extrabold text-zinc-900 mb-3 tracking-tight">{srv.title}</h3>
+                <p className="text-zinc-500 text-sm leading-relaxed font-medium mb-6">{srv.desc}</p>
               </div>
-              <div className={styles.cardBody}>
-                <h3 className={styles.cardTitle}>{srv.title}</h3>
-                <p className={styles.cardDesc}>{srv.desc}</p>
-              </div>
-              <div className={styles.cardFooter}>
-                <a href="#kontak" className={styles.actionBtn}>
+              <div>
+                <a href="#kontak" className="inline-flex items-center gap-1.5 font-bold text-xs text-pln-blue hover:text-pln-blue-hover group">
                   {srv.action}
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className={styles.btnArrow}><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="transition-transform duration-200 group-hover:translate-x-1"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </a>
               </div>
             </div>
@@ -106,30 +111,42 @@ export default function Services() {
         </div>
 
         {/* Promo PLN Mobile App */}
-        <div className={styles.plnMobilePromo}>
-          <div className={styles.promoContent}>
-            <span className={styles.promoBadge}>Super App PLN</span>
-            <h3 className={styles.promoTitle}>Segalanya Lebih Mudah di Aplikasi PLN Mobile</h3>
-            <p className={styles.promoDesc}>
+        <div className="grid grid-cols-1 lg:grid-cols-12 bg-zinc-900 rounded-3xl p-8 sm:p-12 lg:p-14 text-white items-center gap-10 overflow-hidden relative">
+          <div className="lg:col-span-8 text-left relative z-10">
+            <span className="bg-white/10 text-pln-yellow text-[10px] font-extrabold uppercase tracking-widest px-4 py-1.5 rounded-full inline-block mb-6">Super App PLN</span>
+            <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight leading-snug mb-4">Segalanya Lebih Mudah di Aplikasi PLN Mobile</h3>
+            <p className="text-zinc-400 text-sm sm:text-base leading-relaxed max-w-xl mb-8 font-medium">
               Beli token, bayar tagihan, pengaduan gangguan, pasang baru, hingga tambah daya kini bisa dilakukan di mana saja dan kapan saja. Unduh sekarang juga!
             </p>
-            <div className={styles.downloadButtons}>
-              <a href="https://play.google.com/store/apps/details?id=co.id.pln.singlewindow&hl=id" target="_blank" rel="noopener noreferrer" className={styles.downloadBtn}>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a 
+                href="https://play.google.com/store/apps/details?id=co.id.pln.singlewindow&hl=id" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="bg-white hover:bg-zinc-100 text-zinc-900 text-center px-6 py-3 rounded-full font-bold text-sm shadow-md transition-all duration-200"
+              >
                 Google Play Store
               </a>
-              <a href="https://apps.apple.com/id/app/pln-mobile/id1299635030" target="_blank" rel="noopener noreferrer" className={styles.downloadBtn}>
+              <a 
+                href="https://apps.apple.com/id/app/pln-mobile/id1299635030" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="bg-white hover:bg-zinc-100 text-zinc-900 text-center px-6 py-3 rounded-full font-bold text-sm shadow-md transition-all duration-200"
+              >
                 Apple App Store
               </a>
             </div>
           </div>
-          <div className={styles.promoVisual}>
-            <div className={styles.phoneMockup}>
-              <div className={styles.phoneScreen}>
-                <div className={styles.phoneSpeaker}></div>
-                <div className={styles.phoneLogo}>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ color: 'var(--primary-blue)' }}><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+          
+          <div className="lg:col-span-4 flex justify-center items-center relative z-10 w-full">
+            {/* Vector Phone Mockup */}
+            <div className="w-[160px] h-[280px] border-[4px] border-zinc-700 bg-zinc-800 rounded-[28px] p-1.5 shadow-xl flex flex-col relative overflow-hidden animate-float">
+              <div className="w-full h-full rounded-[20px] bg-zinc-50 flex flex-col items-center justify-center relative">
+                <div className="absolute top-2 w-10 h-1.5 bg-zinc-300 rounded-full"></div>
+                <div className="w-12 h-12 rounded-xl bg-white flex items-center justify-center shadow-sm mb-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ color: '#005BAC' }}><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
                 </div>
-                <div className={styles.phoneTitle}>PLN Mobile</div>
+                <span className="font-extrabold text-[11px] text-zinc-800">PLN Mobile</span>
               </div>
             </div>
           </div>
