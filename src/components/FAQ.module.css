@@ -6,10 +6,10 @@
 }
 
 .colTitle {
-  font-size: 1.45rem;
+  font-size: 1.35rem;
   font-weight: 800;
-  color: var(--text-primary);
-  margin-bottom: 28px;
+  color: #1d1d1f;
+  margin-bottom: 24px;
   letter-spacing: -0.02em;
 }
 
@@ -17,26 +17,25 @@
 .accordion {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 14px;
 }
 
 .accordionItem {
-  background-color: var(--bg-primary);
-  border: 1px solid var(--border-light);
-  border-radius: var(--radius-md);
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 14px;
   overflow: hidden;
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.01);
   transition: var(--transition-smooth);
 }
 
 .accordionItem:hover {
-  border-color: rgba(0, 91, 172, 0.15);
-  box-shadow: var(--shadow-md);
+  border-color: rgba(0, 0, 0, 0.15);
 }
 
 .activeItem {
-  border-color: rgba(0, 91, 172, 0.2);
-  box-shadow: var(--shadow-md);
+  border-color: rgba(0, 91, 172, 0.3);
+  box-shadow: 0 8px 25px rgba(0, 91, 172, 0.02);
 }
 
 .accordionHeader {
@@ -45,7 +44,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  padding: 24px;
+  padding: 20px 24px;
   background: transparent;
   border: none;
   text-align: left;
@@ -54,9 +53,9 @@
 }
 
 .questionText {
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-weight: 700;
-  color: var(--text-primary);
+  color: #1d1d1f;
   line-height: 1.4;
   transition: var(--transition-fast);
 }
@@ -70,10 +69,10 @@
 }
 
 .accordionIcon {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 400;
-  color: var(--text-muted);
-  width: 24px;
+  color: #86868b;
+  width: 20px;
   display: flex;
   justify-content: center;
   flex-shrink: 0;
@@ -90,17 +89,16 @@
 }
 
 .activeItem .accordionBody {
-  max-height: 500px; /* arbitrary height to fit content */
+  max-height: 500px;
 }
 
 .accordionContent {
-  padding: 0 24px 24px 24px;
-  border-top: 1px solid transparent;
+  padding: 0 24px 20px 24px;
 }
 
 .accordionContent p {
-  font-size: 0.95rem;
-  color: var(--text-secondary);
+  font-size: 0.9rem;
+  color: #515154;
   line-height: 1.6;
 }
 
@@ -108,37 +106,36 @@
 .tipsList {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  margin-bottom: 24px;
+  gap: 14px;
+  margin-bottom: 20px;
 }
 
 .tipCard {
-  background-color: var(--bg-primary);
-  border: 1px solid var(--border-light);
-  border-radius: var(--radius-md);
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 14px;
   padding: 20px;
   display: flex;
   gap: 16px;
   align-items: flex-start;
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.01);
   transition: var(--transition-smooth);
 }
 
 .tipCard:hover {
   transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
-  border-color: rgba(255, 209, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0.12);
 }
 
 .tipIconWrapper {
-  width: 44px;
-  height: 44px;
-  border-radius: 10px;
-  background-color: var(--bg-secondary);
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #f5f5f7;
+  color: var(--primary-blue);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.4rem;
   flex-shrink: 0;
 }
 
@@ -147,58 +144,60 @@
 }
 
 .tipTitle {
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 700;
-  color: var(--text-primary);
+  color: #1d1d1f;
   margin-bottom: 4px;
 }
 
 .tipDesc {
   font-size: 0.85rem;
-  color: var(--text-secondary);
+  color: #86868b;
   line-height: 1.5;
 }
 
 .infoBanner {
-  background-color: rgba(0, 91, 172, 0.05);
+  background-color: #f5f5f7;
   border-left: 3px solid var(--primary-blue);
-  padding: 18px 20px;
-  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding: 16px 20px;
+  border-radius: 0 12px 12px 0;
   display: flex;
-  gap: 14px;
+  gap: 12px;
   align-items: flex-start;
 }
 
 .infoBannerIcon {
-  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-shrink: 0;
 }
 
 .infoBannerText {
   font-size: 0.85rem;
-  color: var(--text-secondary);
+  color: #515154;
   line-height: 1.5;
 }
 
 .infoBannerText strong {
-  color: var(--primary-blue);
+  color: #1d1d1f;
 }
 
 /* Responsiveness */
 @media (max-width: 992px) {
   .contentGrid {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 32px;
   }
 }
 
 @media (max-width: 576px) {
   .accordionHeader {
-    padding: 20px;
+    padding: 16px 20px;
   }
   
   .accordionContent {
-    padding: 0 20px 20px 20px;
+    padding: 0 20px 16px 20px;
   }
   
   .questionText {

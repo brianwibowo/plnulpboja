@@ -124,8 +124,13 @@ export default function Services() {
           </div>
           <div className={styles.promoVisual}>
             <div className={styles.phoneMockup}>
-              <span className={styles.phoneEmoji}>📱</span>
-              <span className={styles.phoneBadge}>⚡ PLN Mobile</span>
+              <div className={styles.phoneScreen}>
+                <div className={styles.phoneSpeaker}></div>
+                <div className={styles.phoneLogo}>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ color: 'var(--primary-blue)' }}><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                </div>
+                <div className={styles.phoneTitle}>PLN Mobile</div>
+              </div>
             </div>
           </div>
         </div>
