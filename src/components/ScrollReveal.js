@@ -16,8 +16,8 @@ export default function ScrollReveal({ children, className = "", delay = 0 }) {
         }
       },
       {
-        threshold: 0.05, // Trigger when 5% of the element is visible
-        rootMargin: "0px 0px -80px 0px" // Trigger slightly before it fully enters viewport
+        threshold: 0.08, // Trigger when 8% of the element is visible
+        rootMargin: "0px 0px -100px 0px" // Trigger slightly later for better visibility during scroll
       }
     );
 
@@ -37,10 +37,10 @@ export default function ScrollReveal({ children, className = "", delay = 0 }) {
   return (
     <div
       ref={ref}
-      className={`transition-all duration-1000 ease-out transform ${
+      className={`transition-all duration-[1600ms] ease-out transform ${
         isIntersecting
           ? "opacity-100 translate-y-0 scale-100"
-          : "opacity-0 translate-y-12 scale-[0.98]"
+          : "opacity-0 translate-y-16 scale-[0.97]"
       } ${className}`}
       style={{ transitionDelay: `${delay}ms` }}
     >

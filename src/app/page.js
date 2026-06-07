@@ -8,6 +8,7 @@ import Media from "@/components/Media";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
+import ScrollToTop from "@/components/ScrollToTop";
 
 export default function Home() {
   return (
@@ -35,6 +36,7 @@ export default function Home() {
         </ScrollReveal>
       </main>
       <Footer />
+      <ScrollToTop />
     </>
   );
 }

@@ -40,7 +40,7 @@ export default function QuickAccess() {
   ];
 
   return (
-    <section className="py-24 bg-white relative z-10">
+    <section className="pt-24 pb-12 bg-white relative z-10">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         
         {/* Left column: Section Header & text */}

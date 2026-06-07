@@ -56,7 +56,7 @@ export default function Profile() {
   return (
     <>
       {/* Visi & Misi Section (White Background) */}
-      <section id="profil" className="py-20 bg-white relative overflow-hidden">
+      <section id="profil" className="pt-12 pb-20 bg-white relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-6">
           <div className="section-header mb-16 text-center max-w-2xl mx-auto flex flex-col items-center gap-3">
             <span className="section-badge border border-zinc-200/60 bg-zinc-50 text-zinc-800 text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full inline-block">Profil Unit</span>
