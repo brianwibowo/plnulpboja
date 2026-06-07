@@ -61,12 +61,12 @@ export default function FAQ() {
   };
 
   return (
-    <section id="informasi" className="py-20 bg-pln-yellow/10">
+    <section id="informasi" className="py-20 bg-pln-yellow">
       <div className="max-w-7xl mx-auto px-6">
         <div className="section-header mb-16 text-center max-w-2xl mx-auto flex flex-col items-center gap-3">
           <span className="section-badge border border-zinc-200/50 bg-white text-zinc-800 text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full inline-block">Informasi Pelanggan</span>
           <h2 className="section-title text-3xl sm:text-4xl font-extrabold text-zinc-900 tracking-tight">Edukasi & Pertanyaan Umum</h2>
-          <p className="section-subtitle text-zinc-500 text-sm sm:text-base leading-relaxed">
+          <p className="section-subtitle text-zinc-800 text-sm sm:text-base leading-relaxed font-semibold">
             Ketahui jawaban atas pertanyaan yang paling sering diajukan serta panduan keselamatan kelistrikan.
           </p>
         </div>

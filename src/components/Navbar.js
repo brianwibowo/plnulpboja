@@ -23,7 +23,7 @@ export default function Navbar() {
   return (
     <nav className={`fixed top-0 left-0 w-full transition-all duration-300 z-50 ${
       isScrolled 
-        ? "h-16 bg-white/80 backdrop-blur-md border-b border-zinc-200/50 shadow-sm" 
+        ? "h-16 bg-white/90 backdrop-blur-md border-b border-zinc-200/50 shadow-sm" 
         : "h-20 bg-transparent border-b border-transparent"
     }`}>
       <div className="max-w-7xl mx-auto h-full px-6 flex items-center justify-between">
@@ -39,21 +39,39 @@ export default function Navbar() {
             />
           </div>
           <div className="flex flex-col">
-            <span className="font-extrabold text-lg text-pln-blue tracking-wide leading-none">PLN ULP BOJA</span>
-            <span className="text-[10px] text-zinc-400 font-semibold tracking-wider uppercase mt-1">Layanan Handal & Terpercaya</span>
+            <span className={`font-extrabold text-lg tracking-wide leading-none transition-colors duration-300 ${
+              isScrolled ? "text-pln-blue" : "text-white"
+            }`}>PLN ULP BOJA</span>
+            <span className={`text-[10px] font-semibold tracking-wider uppercase mt-1 transition-colors duration-300 ${
+              isScrolled ? "text-zinc-400" : "text-white/60"
+            }`}>Layanan Handal & Terpercaya</span>
           </div>
         </a>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
-          <a href="#home" className="text-zinc-600 hover:text-pln-blue font-semibold text-sm transition-colors duration-200">Home</a>
-          <a href="#profil" className="text-zinc-600 hover:text-pln-blue font-semibold text-sm transition-colors duration-200">Profil</a>
-          <a href="#layanan" className="text-zinc-600 hover:text-pln-blue font-semibold text-sm transition-colors duration-200">Layanan</a>
-          <a href="#informasi" className="text-zinc-600 hover:text-pln-blue font-semibold text-sm transition-colors duration-200">Informasi</a>
-          <a href="#media" className="text-zinc-600 hover:text-pln-blue font-semibold text-sm transition-colors duration-200">Media</a>
+          <a href="#home" className={`font-semibold text-sm transition-colors duration-200 ${
+            isScrolled ? "text-zinc-600 hover:text-pln-blue" : "text-white/80 hover:text-white"
+          }`}>Home</a>
+          <a href="#profil" className={`font-semibold text-sm transition-colors duration-200 ${
+            isScrolled ? "text-zinc-600 hover:text-pln-blue" : "text-white/80 hover:text-white"
+          }`}>Profil</a>
+          <a href="#layanan" className={`font-semibold text-sm transition-colors duration-200 ${
+            isScrolled ? "text-zinc-600 hover:text-pln-blue" : "text-white/80 hover:text-white"
+          }`}>Layanan</a>
+          <a href="#informasi" className={`font-semibold text-sm transition-colors duration-200 ${
+            isScrolled ? "text-zinc-600 hover:text-pln-blue" : "text-white/80 hover:text-white"
+          }`}>Informasi</a>
+          <a href="#media" className={`font-semibold text-sm transition-colors duration-200 ${
+            isScrolled ? "text-zinc-600 hover:text-pln-blue" : "text-white/80 hover:text-white"
+          }`}>Media</a>
           <a 
             href="#kontak" 
-            className="bg-pln-blue hover:bg-pln-blue-hover text-white px-5 py-2.5 rounded-full font-bold text-xs shadow-md shadow-pln-blue/10 transition-all duration-300 hover:-translate-y-0.5"
+            className={`px-5 py-2.5 rounded-full font-bold text-xs shadow-md transition-all duration-300 hover:-translate-y-0.5 ${
+              isScrolled 
+                ? "bg-pln-blue hover:bg-pln-blue-hover text-white shadow-pln-blue/10" 
+                : "bg-white hover:bg-zinc-50 text-pln-blue shadow-white/5"
+            }`}
           >
             Hubungi Kami
           </a>
@@ -65,9 +83,15 @@ export default function Navbar() {
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
         >
-          <span className={`w-full h-[2px] bg-zinc-800 rounded-full transition-transform duration-300 ${isOpen ? "translate-y-[6.5px] rotate-45" : ""}`}></span>
-          <span className={`w-full h-[2px] bg-zinc-800 rounded-full transition-opacity duration-200 ${isOpen ? "opacity-0" : ""}`}></span>
-          <span className={`w-full h-[2px] bg-zinc-800 rounded-full transition-transform duration-300 ${isOpen ? "-translate-y-[7.5px] -rotate-45" : ""}`}></span>
+          <span className={`w-full h-[2px] rounded-full transition-all duration-300 ${
+            isScrolled ? "bg-zinc-800" : "bg-white"
+          } ${isOpen ? "translate-y-[6.5px] rotate-45" : ""}`}></span>
+          <span className={`w-full h-[2px] rounded-full transition-opacity duration-200 ${
+            isScrolled ? "bg-zinc-800" : "bg-white"
+          } ${isOpen ? "opacity-0" : ""}`}></span>
+          <span className={`w-full h-[2px] rounded-full transition-all duration-300 ${
+            isScrolled ? "bg-zinc-800" : "bg-white"
+          } ${isOpen ? "-translate-y-[7.5px] -rotate-45" : ""}`}></span>
         </button>
       </div>
 

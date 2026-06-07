@@ -1,80 +1,137 @@
 "use client";
 
-const services = [
-  {
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
-    ),
-    title: "Pasang Baru",
-    desc: "Pengajuan pemasangan sambungan baru listrik secara online dengan cepat.",
-    link: "#layanan"
-  },
-  {
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
-    ),
-    title: "Tambah Daya",
-    desc: "Ubah daya listrik rumah atau industri Anda menyesuaikan kebutuhan energi.",
-    link: "#layanan"
-  },
-  {
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
-    ),
-    title: "PLN Mobile",
-    desc: "Aplikasi seluler terintegrasi untuk segala urusan kelistrikan dalam satu genggaman.",
-    link: "#layanan"
-  },
-  {
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-    ),
-    title: "Pengaduan",
-    desc: "Hubungi keluhan gangguan listrik 24 jam dengan penanganan cepat di lapangan.",
-    link: "#kontak"
-  },
-  {
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-    ),
-    title: "Area Layanan",
-    desc: "Cakupan wilayah operasional dan detail kantor ULP Boja Kendal.",
-    link: "#profil"
-  },
-  {
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
-    ),
-    title: "Info Pelanggan",
-    desc: "Informasi pemeliharaan berkala, edukasi hemat energi, dan pengumuman terbaru.",
-    link: "#informasi"
-  }
-];
+import { useState } from "react";
+import Image from "next/image";
 
 export default function QuickAccess() {
+  const [activeCard, setActiveCard] = useState(null); // 'info' | 'pengaduan' | 'area' | null
+
+  const cards = [
+    {
+      id: "info",
+      title: "Info Layanan",
+      image: "/gambar/pln_warga.png",
+      spanClass: "md:col-span-6 md:row-span-2 min-h-[380px] md:min-h-[440px]",
+      descTitle: "Informasi Pelayanan Kelistrikan",
+      desc: "Dapatkan info lengkap mengenai pemasangan sambungan baru, penambahan daya, tarif listrik resmi, dan program promo kelistrikan nasional. Semua proses administrasi dapat diajukan dengan mudah tanpa biaya tambahan melalui aplikasi PLN Mobile.",
+      actionText: "Lihat Portal Layanan",
+      actionLink: "#layanan"
+    },
+    {
+      id: "pengaduan",
+      title: "Pengaduan Gangguan",
+      image: "/gambar/pln_mobil keliling.jpg",
+      spanClass: "md:col-span-6 min-h-[180px] md:min-h-[208px]",
+      descTitle: "Layanan Pengaduan 24 Jam",
+      desc: "Tim teknis ULP Boja siap menangani laporan mati listrik, kabel putus, trafo meledak, atau bahaya kelistrikan lainnya 24 jam sehari. Laporkan secara instan via aplikasi PLN Mobile atau hubungi Call Center 123.",
+      actionText: "Laporkan Gangguan",
+      actionLink: "#kontak"
+    },
+    {
+      id: "area",
+      title: "Area Layanan",
+      image: "/gambar/pln_pelayanan_kantor.png",
+      spanClass: "md:col-span-6 min-h-[180px] md:min-h-[208px]",
+      descTitle: "Wilayah Operasional ULP Boja",
+      desc: "Kantor operasional kami di Boja meng-cover keandalan distribusi listrik untuk wilayah Kecamatan Boja, Singorojo, Limbangan, hingga perbatasan Kabupaten Kendal. Kami berkomitmen mendukung kebutuhan energi dari rumah tangga hingga industri.",
+      actionText: "Lihat Detail Wilayah",
+      actionLink: "#profil"
+    }
+  ];
+
   return (
-    <section className="py-6 bg-white relative z-10">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map((item, index) => (
-            <a 
-              href={item.link} 
-              key={index} 
-              className="group flex items-start gap-4 bg-white border border-zinc-200/60 hover:border-zinc-300 rounded-2xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300"
-            >
-              <div className="w-11 h-11 rounded-xl bg-zinc-50 group-hover:bg-pln-blue text-pln-blue group-hover:text-white flex items-center justify-center flex-shrink-0 transition-colors duration-300">
-                <span className="flex items-center justify-center">{item.icon}</span>
-              </div>
-              <div className="flex-grow text-left">
-                <h3 className="font-bold text-[15px] text-zinc-900 group-hover:text-pln-blue mb-1 transition-colors duration-200">{item.title}</h3>
-                <p className="text-xs text-zinc-400 leading-relaxed font-medium">{item.desc}</p>
-              </div>
-              <div className="opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 text-pln-blue flex items-center justify-center flex-shrink-0 transition-all duration-300 mt-1">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-              </div>
-            </a>
-          ))}
+    <section className="py-24 bg-white relative z-10">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        {/* Left column: Section Header & text */}
+        <div className="lg:col-span-4 text-left flex flex-col items-start gap-4">
+          <span className="text-xs font-bold uppercase tracking-wider text-pln-blue bg-zinc-50 border border-zinc-150 px-3 py-1.5 rounded-full inline-block">Portal Utama</span>
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-zinc-900 tracking-tight leading-tight">
+            Akses Layanan Terpenting Kami
+          </h2>
+          <p className="text-sm sm:text-base text-zinc-500 leading-relaxed font-medium">
+            PLN ULP Boja menyediakan portal informasi terpadu. Klik pada kartu layanan untuk membaca detail penjelasan atau mengakses menu bantuan langsung.
+          </p>
         </div>
+
+        {/* Right column: Bento Grid cards */}
+        <div className="lg:col-span-8 w-full">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-fr">
+            {cards.map((card) => {
+              const isActive = activeCard === card.id;
+              return (
+                <div
+                  key={card.id}
+                  onClick={() => setActiveCard(card.id)}
+                  className={`group relative rounded-3xl overflow-hidden cursor-pointer shadow-md hover:shadow-xl border border-zinc-200/40 transition-all duration-350 ${card.spanClass}`}
+                >
+                  {/* Background Image */}
+                  <Image
+                    src={card.image}
+                    alt={card.title}
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-103 -z-20"
+                    sizes="(max-width: 768px) 100vw, 400px"
+                  />
+
+                  {/* Gradient Mask Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-transparent -z-10 transition-opacity duration-300"></div>
+
+                  {/* Card Title & Arrow Icon at bottom */}
+                  <div className="absolute bottom-6 left-6 right-6 flex items-center justify-between z-10 transition-all duration-300">
+                    <h3 className="font-extrabold text-lg sm:text-xl text-white tracking-tight leading-none group-hover:text-pln-yellow transition-colors duration-250">
+                      {card.title}
+                    </h3>
+                    <div className="w-10 h-10 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white flex items-center justify-center transition-all duration-300 group-hover:bg-pln-blue group-hover:border-pln-blue group-hover:scale-105">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </div>
+                  </div>
+
+                  {/* Click Overlay (Penjelasan Singkat) */}
+                  <div 
+                    className={`absolute inset-0 bg-white/98 backdrop-blur-md p-8 flex flex-col justify-between text-left transition-all duration-500 z-20 ${
+                      isActive 
+                        ? "opacity-100 translate-y-0" 
+                        : "opacity-0 translate-y-full pointer-events-none"
+                    }`}
+                    onClick={(e) => {
+                      // Prevent parent click triggering close
+                      e.stopPropagation();
+                    }}
+                  >
+                    <div>
+                      {/* Header overlay */}
+                      <div className="flex justify-between items-center mb-6">
+                        <span className="text-[10px] font-bold text-pln-blue uppercase tracking-widest bg-pln-blue/5 border border-pln-blue/10 px-3 py-1 rounded-full">{card.title}</span>
+                        <button 
+                          onClick={() => setActiveCard(null)}
+                          className="w-8 h-8 rounded-full bg-zinc-100 hover:bg-zinc-200 text-zinc-500 hover:text-zinc-800 flex items-center justify-center transition-colors border-none outline-none cursor-pointer"
+                        >
+                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                        </button>
+                      </div>
+                      <h4 className="text-lg font-extrabold text-zinc-900 mb-3 tracking-tight">{card.descTitle}</h4>
+                      <p className="text-xs sm:text-sm text-zinc-500 leading-relaxed font-medium">{card.desc}</p>
+                    </div>
+
+                    <div>
+                      <a 
+                        href={card.actionLink}
+                        onClick={() => setActiveCard(null)}
+                        className="inline-flex items-center justify-center gap-1.5 bg-pln-blue hover:bg-pln-blue-hover text-white text-xs font-bold px-5 py-3 rounded-full transition-all duration-250 shadow-sm"
+                      >
+                        {card.actionText}
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
       </div>
     </section>
   );
