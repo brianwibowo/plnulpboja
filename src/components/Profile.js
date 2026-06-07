@@ -54,10 +54,10 @@ function Counter({ end, duration = 2000, suffix = "" }) {
 
 export default function Profile() {
   return (
-    <section id="profil" className="py-20 bg-zinc-50 relative overflow-hidden">
+    <section id="profil" className="py-20 bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         <div className="section-header mb-16 text-center max-w-2xl mx-auto flex flex-col items-center gap-3">
-          <span className="section-badge border border-zinc-200/50 bg-white text-zinc-800 text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full inline-block">Profil Unit</span>
+          <span className="section-badge border border-zinc-200/60 bg-zinc-50 text-zinc-800 text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full inline-block">Profil Unit</span>
           <h2 className="section-title text-3xl sm:text-4xl font-extrabold text-zinc-900 tracking-tight">Kenali PLN ULP Boja</h2>
           <p className="section-subtitle text-zinc-500 text-sm sm:text-base leading-relaxed">
             Melayani dengan integritas tinggi untuk memastikan pasokan listrik selalu tersedia bagi Anda.
@@ -67,7 +67,7 @@ export default function Profile() {
         {/* Vision & Mission grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-20">
           {/* Visi */}
-          <div className="bg-white border border-zinc-200/60 rounded-2xl p-8 sm:p-10 relative overflow-hidden shadow-sm flex flex-col justify-between">
+          <div className="bg-zinc-50/50 border border-zinc-200/60 rounded-2xl p-8 sm:p-10 relative overflow-hidden shadow-sm flex flex-col justify-between">
             <div className="absolute top-0 left-0 w-1.5 h-full bg-pln-blue"></div>
             <div>
               <span className="text-[10px] font-bold text-pln-blue uppercase tracking-wider block mb-6">Visi Kami</span>
@@ -82,7 +82,7 @@ export default function Profile() {
           </div>
 
           {/* Misi */}
-          <div className="bg-white border border-zinc-200/60 rounded-2xl p-8 sm:p-10 relative overflow-hidden shadow-sm">
+          <div className="bg-zinc-50/50 border border-zinc-200/60 rounded-2xl p-8 sm:p-10 relative overflow-hidden shadow-sm">
             <div className="absolute top-0 left-0 w-1.5 h-full bg-pln-sky"></div>
             <span className="text-[10px] font-bold text-pln-sky uppercase tracking-wider block mb-6">Misi Kami</span>
             <ul className="flex flex-col gap-6">
@@ -118,20 +118,20 @@ export default function Profile() {
               Melalui program modernisasi infrastruktur dan pelayanan digital, kami terus berkomitmen menghadirkan keandalan listrik bagi pelanggan di seluruh wilayah kerja kecamatan Boja dan sekitarnya.
             </p>
             
-            <div className="bg-white border border-zinc-200/60 rounded-xl p-6 shadow-sm">
+            <div className="bg-zinc-50/50 border border-zinc-200/60 rounded-xl p-6 shadow-sm">
               <h4 className="text-xs font-bold text-zinc-800 uppercase tracking-wider mb-4">Cakupan Wilayah Utama</h4>
               <div className="flex flex-wrap gap-2">
-                <span className="bg-zinc-50 border border-zinc-150 text-zinc-600 font-bold text-xs px-3.5 py-1.5 rounded-full">Kecamatan Boja</span>
-                <span className="bg-zinc-50 border border-zinc-150 text-zinc-600 font-bold text-xs px-3.5 py-1.5 rounded-full">Kecamatan Limbangan</span>
-                <span className="bg-zinc-50 border border-zinc-150 text-zinc-600 font-bold text-xs px-3.5 py-1.5 rounded-full">Kecamatan Singorojo</span>
-                <span className="bg-zinc-50 border border-zinc-150 text-zinc-600 font-bold text-xs px-3.5 py-1.5 rounded-full">Kabupaten Kendal</span>
+                <span className="bg-white border border-zinc-150 text-zinc-600 font-bold text-xs px-3.5 py-1.5 rounded-full">Kecamatan Boja</span>
+                <span className="bg-white border border-zinc-150 text-zinc-600 font-bold text-xs px-3.5 py-1.5 rounded-full">Kecamatan Limbangan</span>
+                <span className="bg-white border border-zinc-150 text-zinc-600 font-bold text-xs px-3.5 py-1.5 rounded-full">Kecamatan Singorojo</span>
+                <span className="bg-white border border-zinc-150 text-zinc-600 font-bold text-xs px-3.5 py-1.5 rounded-full">Kabupaten Kendal</span>
               </div>
             </div>
           </div>
 
           {/* Stats cards columns */}
           <div className="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
-            <div className="bg-white border border-zinc-200/60 hover:border-zinc-300 rounded-2xl p-6 flex flex-col items-center text-center shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+            <div className="bg-zinc-50/50 border border-zinc-200/60 hover:border-zinc-300 rounded-2xl p-6 flex flex-col items-center text-center shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
               <span className="text-pln-blue mb-4 flex items-center justify-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
               </span>
@@ -141,7 +141,7 @@ export default function Profile() {
               <span className="text-[10px] font-bold text-zinc-400 uppercase tracking-widest">Pelanggan Aktif</span>
             </div>
 
-            <div className="bg-white border border-zinc-200/60 hover:border-zinc-300 rounded-2xl p-6 flex flex-col items-center text-center shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+            <div className="bg-zinc-50/50 border border-zinc-200/60 hover:border-zinc-300 rounded-2xl p-6 flex flex-col items-center text-center shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
               <span className="text-pln-blue mb-4 flex items-center justify-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="7" width="20" height="10" rx="2" ry="2"></rect><line x1="6" y1="22" x2="6" y2="17"></line><line x1="18" y1="22" x2="18" y2="17"></line><line x1="12" y1="22" x2="12" y2="17"></line></svg>
               </span>
@@ -151,7 +151,7 @@ export default function Profile() {
               <span className="text-[10px] font-bold text-zinc-400 uppercase tracking-widest">Gardu Distribusi</span>
             </div>
 
-            <div className="bg-white border border-zinc-200/60 hover:border-zinc-300 rounded-2xl p-6 flex flex-col items-center text-center shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+            <div className="bg-zinc-50/50 border border-zinc-200/60 hover:border-zinc-300 rounded-2xl p-6 flex flex-col items-center text-center shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
               <span className="text-pln-blue mb-4 flex items-center justify-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
               </span>
@@ -161,7 +161,7 @@ export default function Profile() {
               <span className="text-[10px] font-bold text-zinc-400 uppercase tracking-widest">Keandalan Jaringan</span>
             </div>
 
-            <div className="bg-white border border-zinc-200/60 hover:border-zinc-300 rounded-2xl p-6 flex flex-col items-center text-center shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+            <div className="bg-zinc-50/50 border border-zinc-200/60 hover:border-zinc-300 rounded-2xl p-6 flex flex-col items-center text-center shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
               <span className="text-pln-blue mb-4 flex items-center justify-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
               </span>

@@ -39,10 +39,10 @@ export default function Contact() {
   };
 
   return (
-    <section id="kontak" className="py-20 bg-zinc-50">
+    <section id="kontak" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="section-header mb-16 text-center max-w-2xl mx-auto flex flex-col items-center gap-3">
-          <span className="section-badge border border-zinc-200/50 bg-white text-zinc-800 text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full inline-block">Hubungi Kami</span>
+          <span className="section-badge border border-zinc-200/60 bg-zinc-50 text-zinc-800 text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full inline-block">Hubungi Kami</span>
           <h2 className="section-title text-3xl sm:text-4xl font-extrabold text-zinc-900 tracking-tight">Selalu Siap Melayani Anda</h2>
           <p className="section-subtitle text-zinc-500 text-sm sm:text-base leading-relaxed">
             Kunjungi kantor kami, hubungi saluran telepon resmi, atau kirimkan pesan langsung melalui formulir kontak.
@@ -54,7 +54,7 @@ export default function Contact() {
           <div className="lg:col-span-6 flex flex-col gap-8">
             <div className="flex flex-col gap-4">
               {/* Address */}
-              <div className="bg-white border border-zinc-200/60 rounded-2xl p-6 flex gap-5 items-start shadow-sm hover:border-zinc-300 transition-all duration-300">
+              <div className="bg-zinc-50/50 border border-zinc-200/60 rounded-2xl p-6 flex gap-5 items-start shadow-sm hover:border-zinc-300 transition-all duration-300">
                 <div className="w-10 h-10 rounded-xl bg-zinc-50 text-pln-blue flex items-center justify-center flex-shrink-0">
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
                 </div>
@@ -67,7 +67,7 @@ export default function Contact() {
               </div>
 
               {/* Call center & Telp */}
-              <div className="bg-white border border-zinc-200/60 rounded-2xl p-6 flex gap-5 items-start shadow-sm hover:border-zinc-300 transition-all duration-300">
+              <div className="bg-zinc-50/50 border border-zinc-200/60 rounded-2xl p-6 flex gap-5 items-start shadow-sm hover:border-zinc-300 transition-all duration-300">
                 <div className="w-10 h-10 rounded-xl bg-zinc-50 text-pln-blue flex items-center justify-center flex-shrink-0">
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                 </div>
@@ -81,7 +81,7 @@ export default function Contact() {
               </div>
 
               {/* Operating Hours */}
-              <div className="bg-white border border-zinc-200/60 rounded-2xl p-6 flex gap-5 items-start shadow-sm hover:border-zinc-300 transition-all duration-300">
+              <div className="bg-zinc-50/50 border border-zinc-200/60 rounded-2xl p-6 flex gap-5 items-start shadow-sm hover:border-zinc-300 transition-all duration-300">
                 <div className="w-10 h-10 rounded-xl bg-zinc-50 text-pln-blue flex items-center justify-center flex-shrink-0">
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
                 </div>
@@ -113,7 +113,7 @@ export default function Contact() {
 
           {/* Contact Form Column */}
           <div className="lg:col-span-6 lg:sticky lg:top-24 w-full">
-            <div className="bg-white border border-zinc-200/60 rounded-3xl p-8 sm:p-10 shadow-sm text-left">
+            <div className="bg-zinc-50/50 border border-zinc-200/60 rounded-3xl p-8 sm:p-10 shadow-sm text-left">
               <h3 className="text-xl sm:text-2xl font-extrabold text-zinc-900 mb-2 tracking-tight">Kirim Pesan Langsung</h3>
               <p className="text-zinc-500 text-xs sm:text-sm mb-6 font-medium">Ada pertanyaan atau keluhan administratif? Tim kami akan segera merespons Anda.</p>
               

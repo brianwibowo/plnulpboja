@@ -61,7 +61,7 @@ export default function FAQ() {
   };
 
   return (
-    <section id="informasi" className="py-20 bg-zinc-50">
+    <section id="informasi" className="py-20 bg-pln-yellow/10">
       <div className="max-w-7xl mx-auto px-6">
         <div className="section-header mb-16 text-center max-w-2xl mx-auto flex flex-col items-center gap-3">
           <span className="section-badge border border-zinc-200/50 bg-white text-zinc-800 text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full inline-block">Informasi Pelanggan</span>
@@ -122,7 +122,7 @@ export default function FAQ() {
             </div>
             
             {/* Banner info tambahan */}
-            <div className="bg-zinc-100 border-l-4 border-pln-blue p-5 rounded-r-2xl flex gap-3.5 items-start">
+            <div className="bg-white/90 border border-zinc-200/60 border-l-4 border-l-pln-blue p-5 rounded-r-2xl flex gap-3.5 items-start">
               <span className="text-pln-blue flex items-center justify-center flex-shrink-0 mt-0.5">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
               </span>

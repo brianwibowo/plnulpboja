@@ -7,6 +7,7 @@ import FAQ from "@/components/FAQ";
 import Media from "@/components/Media";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export default function Home() {
   return (
@@ -14,14 +15,27 @@ export default function Home() {
       <Navbar />
       <main style={{ flex: "1 0 auto" }}>
         <Hero />
-        <QuickAccess />
-        <Profile />
-        <Services />
-        <FAQ />
-        <Media />
-        <Contact />
+        <ScrollReveal>
+          <QuickAccess />
+        </ScrollReveal>
+        <ScrollReveal>
+          <Profile />
+        </ScrollReveal>
+        <ScrollReveal>
+          <Services />
+        </ScrollReveal>
+        <ScrollReveal>
+          <FAQ />
+        </ScrollReveal>
+        <ScrollReveal>
+          <Media />
+        </ScrollReveal>
+        <ScrollReveal>
+          <Contact />
+        </ScrollReveal>
       </main>
       <Footer />
     </>
   );
 }
+
