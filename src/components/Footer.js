@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer className="bg-zinc-950 text-zinc-400 pt-16 relative overflow-hidden border-t border-zinc-900">
       <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-pln-blue via-pln-sky to-pln-yellow"></div>
-      
+
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 mb-12">
         {/* Logo & Description Column */}
         <div className="lg:col-span-5 flex flex-col items-start text-left gap-5">
@@ -29,7 +29,7 @@ export default function Footer() {
             Menyediakan tenaga listrik secara andal, aman, dan memadai demi kenyamanan aktivitas harian Anda dan kemajuan pembangunan nasional.
           </p>
           <div className="flex gap-3 mt-2">
-            <a href="https://instagram.com/pln_id" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-white/5 hover:bg-pln-blue text-zinc-400 hover:text-white flex items-center justify-center transition-all duration-350 hover:-translate-y-1" aria-label="Instagram">
+            <a href="https://www.instagram.com/pln.boja/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-white/5 hover:bg-pln-blue text-zinc-400 hover:text-white flex items-center justify-center transition-all duration-350 hover:-translate-y-1" aria-label="Instagram">
               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
             </a>
             <a href="https://facebook.com/cc123pln" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-white/5 hover:bg-pln-blue text-zinc-400 hover:text-white flex items-center justify-center transition-all duration-350 hover:-translate-y-1" aria-label="Facebook">
@@ -76,7 +76,7 @@ export default function Footer() {
             Layanan Pengaduan PLN Mobile (24 Jam)
           </p>
           <p className="text-xs sm:text-sm text-zinc-450 leading-relaxed font-medium">
-            Kantor ULP: Jl. Tampingan No. 3, Boja, Kendal, Jawa Tengah 51381
+            Kantor ULP: JL. Tampingan, No. 3, Boja, Grajegan, Tampingan, Kendal, Kabupaten Kendal, Jawa Tengah 50216
           </p>
         </div>
       </div>

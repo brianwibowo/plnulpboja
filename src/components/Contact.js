@@ -61,7 +61,7 @@ export default function Contact() {
                 <div className="text-left">
                   <h4 className="font-bold text-sm text-zinc-900 mb-1">Alamat Kantor</h4>
                   <p className="text-xs sm:text-sm text-zinc-500 leading-relaxed font-medium">
-                    Jalan Tampingan No. 3, Boja, Kabupaten Kendal, Jawa Tengah 51381
+                    JL. Tampingan, No. 3, Boja, Grajegan, Tampingan, Kendal, Kabupaten Kendal, Jawa Tengah 50216
                   </p>
                 </div>
               </div>
@@ -98,7 +98,7 @@ export default function Contact() {
             {/* Google Map Embed */}
             <div className="h-[320px] rounded-2xl overflow-hidden border border-zinc-200/80 shadow-md">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.0435165275815!2d110.27641217584144!3d-7.1209675698305765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70891461ffcb51%3A0xe2a8cb40f1a9b2d8!2sPLN%20ULP%20Boja!5e0!3m2!1sid!2sid!4v1717696349000!5m2!1sid!2sid"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.178004879741!2d110.2786705!3d-7.1053588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70625590aba13d%3A0x6c75946185fee7ed!2sPLN%20ULP%20Boja!5e0!3m2!1sid!2sid!4v1717696349000!5m2!1sid!2sid"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

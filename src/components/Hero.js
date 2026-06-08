@@ -8,8 +8,8 @@ export default function Hero() {
       {/* Background Image spanning the entire fullscreen */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/gambar/pln_naik gardu.jpg"
-          alt="Petugas PLN melakukan pemeliharaan gardu listrik"
+          src="/gambar/pln_foto gedung tak hd.jpg"
+          alt="Gedung Kantor PLN ULP Boja"
           fill
           priority
           className="object-cover object-center opacity-90 transition-transform duration-1000 scale-101"
@@ -22,16 +22,8 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent z-10"></div>
 
       {/* Main Content Container */}
-      <div className="max-w-7xl mx-auto px-6 w-full relative z-20">
+      <div className="max-w-7xl mx-auto px-6 w-full relative z-20 pt-8 sm:pt-12 lg:pt-16">
         <div className="max-w-2xl text-left flex flex-col items-start gap-6 animate-fade-in-up">
-          
-          {/* Top Badge */}
-          <div className="inline-flex items-center gap-2.5 bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 rounded-full font-bold text-xs uppercase tracking-wider text-white mb-2 shadow-sm">
-            <span className="w-2.5 h-2.5 bg-pln-yellow rounded-full inline-block animate-pulse"></span>
-            <span>BUMN Terpercaya</span>
-            <span className="text-white/30">|</span>
-            <span>ULP Boja</span>
-          </div>
 
           {/* Title */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.12]">

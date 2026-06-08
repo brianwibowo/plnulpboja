@@ -144,15 +144,15 @@ export default function Services() {
 
         {/* Promo PLN Mobile App */}
         <div className="grid grid-cols-1 lg:grid-cols-12 bg-zinc-900 rounded-3xl p-8 sm:p-12 lg:p-14 text-white items-center gap-10 overflow-hidden relative">
-          <div className="lg:col-span-8 text-left relative z-10">
+          <div className="lg:col-span-7 text-left relative z-10">
             <span className="bg-white/10 text-pln-yellow text-[10px] font-extrabold uppercase tracking-widest px-4 py-1.5 rounded-full inline-block mb-6">Super App PLN</span>
-            <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight leading-snug mb-4">Segalanya Lebih Mudah di Aplikasi PLN Mobile</h3>
+            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight leading-snug mb-4">Segalanya Lebih Mudah di Aplikasi PLN Mobile</h3>
             <p className="text-zinc-400 text-sm sm:text-base leading-relaxed max-w-xl mb-8 font-medium">
               Beli token, bayar tagihan, pengaduan gangguan, pasang baru, hingga tambah daya kini bisa dilakukan di mana saja dan kapan saja. Unduh sekarang juga!
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a 
-                href="https://play.google.com/store/apps/details?id=co.id.pln.singlewindow&hl=id" 
+                href="https://play.google.com/store/apps/details?id=com.icon.pln123&pli=1" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="bg-white hover:bg-zinc-100 text-zinc-900 text-center px-6 py-3 rounded-full font-bold text-sm shadow-md transition-all duration-200"
@@ -170,15 +170,40 @@ export default function Services() {
             </div>
           </div>
           
-          <div className="lg:col-span-4 flex justify-center items-center relative z-10 w-full">
-            {/* Vector Phone Mockup */}
-            <div className="w-[160px] h-[280px] border-[4px] border-zinc-700 bg-zinc-800 rounded-[28px] p-1.5 shadow-xl flex flex-col relative overflow-hidden animate-float">
-              <div className="w-full h-full rounded-[20px] bg-zinc-50 flex flex-col items-center justify-center relative">
-                <div className="absolute top-2 w-10 h-1.5 bg-zinc-300 rounded-full"></div>
-                <div className="w-12 h-12 rounded-xl bg-white flex items-center justify-center shadow-sm mb-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ color: '#005BAC' }}><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
-                </div>
-                <span className="font-extrabold text-[11px] text-zinc-800">PLN Mobile</span>
+          <div className="lg:col-span-5 flex justify-center items-center relative z-10 w-full min-h-[350px] lg:min-h-[400px] mt-8 lg:mt-0 overflow-visible">
+            {/* Staggered Bleeding Phone Mockups */}
+            <div className="flex flex-row items-center justify-center gap-3 sm:gap-4 lg:gap-5 lg:-mr-10 xl:-mr-16 overflow-visible w-full">
+              {/* Phone 1 (Kiri) */}
+              <div className="relative w-[100px] h-[200px] sm:w-[130px] sm:h-[260px] lg:w-[145px] lg:h-[290px] xl:w-[165px] xl:h-[330px] border-4 border-zinc-850 bg-zinc-950 rounded-[18px] sm:rounded-[24px] overflow-hidden shadow-xl transform translate-y-6 hover:translate-y-2 transition-all duration-500 flex-shrink-0">
+                <Image
+                  src="/gambar/pln_mobile.png"
+                  alt="PLN Mobile Screenshot 1"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 640px) 100px, (max-width: 1024px) 130px, 165px"
+                />
+              </div>
+
+              {/* Phone 2 (Tengah) */}
+              <div className="relative w-[110px] h-[220px] sm:w-[140px] sm:h-[280px] lg:w-[155px] lg:h-[310px] xl:w-[175px] xl:h-[350px] border-4 border-zinc-850 bg-zinc-950 rounded-[18px] sm:rounded-[24px] overflow-hidden shadow-2xl transform -translate-y-4 hover:-translate-y-8 transition-all duration-500 z-10 animate-float flex-shrink-0">
+                <Image
+                  src="/gambar/plnmobile2.png"
+                  alt="PLN Mobile Screenshot 2"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 640px) 110px, (max-width: 1024px) 140px, 175px"
+                />
+              </div>
+
+              {/* Phone 3 (Kanan) */}
+              <div className="hidden sm:block relative w-[100px] h-[200px] sm:w-[130px] sm:h-[260px] lg:w-[145px] lg:h-[290px] xl:w-[165px] xl:h-[330px] border-4 border-zinc-850 bg-zinc-950 rounded-[18px] sm:rounded-[24px] overflow-hidden shadow-xl transform translate-y-12 hover:translate-y-8 transition-all duration-500 flex-shrink-0">
+                <Image
+                  src="/gambar/plnmobile3.png"
+                  alt="PLN Mobile Screenshot 3"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 640px) 100px, (max-width: 1024px) 130px, 165px"
+                />
               </div>
             </div>
           </div>
