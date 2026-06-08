@@ -107,15 +107,6 @@ export default function Navbar() {
       <div className={`fixed top-0 right-0 h-screen w-[280px] bg-white/90 backdrop-blur-xl border-l border-zinc-200/50 shadow-2xl z-45 transition-transform duration-300 ease-in-out px-8 pt-24 flex flex-col md:hidden ${
         isOpen ? "translate-x-0" : "translate-x-full"
       }`}>
-        {/* Tombol Silang (Close Button) */}
-        <button 
-          onClick={() => setIsOpen(false)}
-          className="absolute top-6 right-6 w-9 h-9 rounded-full bg-zinc-150/50 hover:bg-zinc-200/50 text-zinc-600 hover:text-zinc-900 flex items-center justify-center transition-colors border-none outline-none cursor-pointer"
-          aria-label="Close menu"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-        </button>
-
         <div className="flex flex-col gap-6 text-left mt-4">
           <a href="#home" className="text-zinc-800 hover:text-pln-blue font-bold text-lg transition-colors duration-200" onClick={() => setIsOpen(false)}>Home</a>
           <a href="#profil" className="text-zinc-800 hover:text-pln-blue font-bold text-lg transition-colors duration-200" onClick={() => setIsOpen(false)}>Profil</a>
