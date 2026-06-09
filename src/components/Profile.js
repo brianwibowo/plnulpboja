@@ -34,7 +34,7 @@ function Counter({ end, duration = 2000, suffix = "" }) {
 
     const totalMiliseconds = duration;
     const incrementTime = Math.max(Math.floor(totalMiliseconds / endValue), 10);
-    
+
     const timer = setInterval(() => {
       start += Math.ceil(endValue / (totalMiliseconds / incrementTime));
       if (start >= endValue) {
@@ -76,7 +76,7 @@ export default function Profile() {
                   “Menjadi Perusahaan Global Top 500 dan #1 Pilihan Pelanggan untuk Solusi Energi.”
                 </p>
               </div>
-              
+
               <div className="border-l-2 border-pln-yellow pl-4 py-2">
                 <span className="text-[10px] uppercase font-bold text-zinc-400 tracking-wider block mb-1">Moto Utama</span>
                 <p className="text-base font-extrabold text-pln-blue tracking-tight">"Listrik untuk Kehidupan yang Lebih Baik"</p>
@@ -131,7 +131,7 @@ export default function Profile() {
               <p className="text-sm sm:text-base text-zinc-800 leading-relaxed mb-8 font-semibold">
                 Melalui program modernisasi infrastruktur dan pelayanan digital, kami terus berkomitmen menghadirkan keandalan listrik bagi pelanggan di seluruh wilayah kerja kecamatan Boja dan sekitarnya.
               </p>
-              
+
               <div className="bg-white border border-zinc-200/60 rounded-xl p-6 shadow-sm">
                 <h4 className="text-xs font-bold text-zinc-800 uppercase tracking-wider mb-4">Cakupan Wilayah Utama</h4>
                 <div className="flex flex-wrap gap-2">
@@ -150,7 +150,7 @@ export default function Profile() {
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
                 </span>
                 <div className="text-3xl font-extrabold text-zinc-900 tracking-tight leading-none mb-2">
-                  <Counter end="48500" suffix="+" />
+                  <Counter end="120000" suffix="+" />
                 </div>
                 <span className="text-[10px] font-bold text-zinc-400 uppercase tracking-widest">Pelanggan Aktif</span>
               </div>

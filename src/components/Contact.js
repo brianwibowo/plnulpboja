@@ -23,7 +23,7 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     setTimeout(() => {
       setIsSubmitting(false);
       setSubmitSuccess(true);
@@ -74,7 +74,6 @@ export default function Contact() {
                 <div className="text-left">
                   <h4 className="font-bold text-sm text-zinc-900 mb-1">Telepon & Layanan</h4>
                   <p className="text-xs sm:text-sm text-zinc-500 leading-relaxed font-medium">
-                    Kantor ULP: (0294) 571 152 <br />
                     Call Center Nasional: (Kode Area) 123
                   </p>
                 </div>
@@ -116,7 +115,7 @@ export default function Contact() {
             <div className="bg-zinc-50/50 border border-zinc-200/60 rounded-3xl p-8 sm:p-10 shadow-sm text-left">
               <h3 className="text-xl sm:text-2xl font-extrabold text-zinc-900 mb-2 tracking-tight">Kirim Pesan Langsung</h3>
               <p className="text-zinc-500 text-xs sm:text-sm mb-6 font-medium">Ada pertanyaan atau keluhan administratif? Tim kami akan segera merespons Anda.</p>
-              
+
               <form onSubmit={handleSubmit} className="flex flex-col gap-5">
                 <div className="flex flex-col gap-2">
                   <label htmlFor="name" className="text-xs font-bold text-zinc-850">Nama Lengkap</label>
@@ -192,8 +191,8 @@ export default function Contact() {
                   ></textarea>
                 </div>
 
-                <button 
-                  type="submit" 
+                <button
+                  type="submit"
                   disabled={isSubmitting}
                   className="bg-pln-blue hover:bg-pln-blue-hover disabled:opacity-60 text-white font-bold text-sm py-4 rounded-xl transition-colors duration-200 mt-2 shadow-md shadow-pln-blue/10"
                 >
