@@ -49,53 +49,43 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:items-stretch items-start">
           {/* Contact Information & Map Column */}
-          <div className="lg:col-span-6 flex flex-col gap-8">
+          <div className="lg:col-span-6 flex flex-col gap-8 h-full">
             <div className="flex flex-col gap-4">
-              {/* Address */}
+              {/* Address & Operating Hours */}
               <div className="bg-zinc-50/50 border border-zinc-200/60 rounded-2xl p-6 flex gap-5 items-start shadow-sm hover:border-zinc-300 transition-all duration-300">
                 <div className="w-10 h-10 rounded-xl bg-zinc-50 text-pln-blue flex items-center justify-center flex-shrink-0">
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
                 </div>
                 <div className="text-left">
-                  <h4 className="font-bold text-sm text-zinc-900 mb-1">Alamat Kantor</h4>
+                  <h4 className="font-bold text-sm text-zinc-900 mb-1.5">Alamat Kantor & Jam Operasional</h4>
                   <p className="text-xs sm:text-sm text-zinc-500 leading-relaxed font-medium">
                     JL. Tampingan, No. 3, Boja, Grajegan, Tampingan, Kendal, Kabupaten Kendal, Jawa Tengah 50216
                   </p>
-                </div>
-              </div>
-
-              {/* Call center & Telp */}
-              <div className="bg-zinc-50/50 border border-zinc-200/60 rounded-2xl p-6 flex gap-5 items-start shadow-sm hover:border-zinc-300 transition-all duration-300">
-                <div className="w-10 h-10 rounded-xl bg-zinc-50 text-pln-blue flex items-center justify-center flex-shrink-0">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                </div>
-                <div className="text-left">
-                  <h4 className="font-bold text-sm text-zinc-900 mb-1">Telepon & Layanan</h4>
-                  <p className="text-xs sm:text-sm text-zinc-500 leading-relaxed font-medium">
-                    Call Center Nasional: (Kode Area) 123
+                  <p className="text-xs text-zinc-400 font-semibold uppercase tracking-wider mt-2 pt-2 border-t border-zinc-200/60">
+                    Senin - Jumat: 08.00 - 16.00 WIB
                   </p>
                 </div>
               </div>
 
-              {/* Operating Hours */}
+              {/* PLN Mobile */}
               <div className="bg-zinc-50/50 border border-zinc-200/60 rounded-2xl p-6 flex gap-5 items-start shadow-sm hover:border-zinc-300 transition-all duration-300">
                 <div className="w-10 h-10 rounded-xl bg-zinc-50 text-pln-blue flex items-center justify-center flex-shrink-0">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
                 </div>
                 <div className="text-left">
-                  <h4 className="font-bold text-sm text-zinc-900 mb-1">Jam Operasional Kantor</h4>
+                  <h4 className="font-bold text-sm text-zinc-900 mb-1">PLN Mobile</h4>
                   <p className="text-xs sm:text-sm text-zinc-500 leading-relaxed font-medium">
-                    Senin - Jumat: 08.00 - 16.00 WIB <br />
-                    (Layanan Gangguan Lapangan Tetap Siaga 24 Jam)
+                    Pelayanan 24 Jam <br />
+                    <span className="text-xs text-zinc-400 block mt-1">(Akses mandiri pengaduan gangguan, transaksi token, & pasang baru)</span>
                   </p>
                 </div>
               </div>
             </div>
 
             {/* Google Map Embed */}
-            <div className="h-[320px] rounded-2xl overflow-hidden border border-zinc-200/80 shadow-md">
+            <div className="flex-1 min-h-[320px] rounded-2xl overflow-hidden border border-zinc-200/80 shadow-md relative">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.178004879741!2d110.2786705!3d-7.1053588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70625590aba13d%3A0x6c75946185fee7ed!2sPLN%20ULP%20Boja!5e0!3m2!1sid!2sid!4v1717696349000!5m2!1sid!2sid"
                 width="100%"
