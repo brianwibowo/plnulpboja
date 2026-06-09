@@ -21,9 +21,9 @@ export default function QuickAccess() {
       id: "pengaduan",
       title: "Pengaduan Gangguan",
       image: "/gambar/pln_mobil keliling.jpg",
-      spanClass: "md:col-span-6 min-h-[180px] md:min-h-[208px]",
-      descTitle: "Layanan Pengaduan 24 Jam",
-      desc: "Tim teknis ULP Boja siap menangani laporan mati listrik, kabel putus, trafo meledak, atau bahaya kelistrikan lainnya 24 jam sehari. Laporkan secara instan via aplikasi PLN Mobile atau hubungi Call Center 123.",
+      spanClass: "md:col-span-6 min-h-[210px] md:min-h-[208px]",
+      descTitle: "Layanan Siaga 24 Jam",
+      desc: "Tim teknis kami siap menangani laporan padam listrik, kabel putus, trafo meledak, atau bahaya kelistrikan lainnya secara cepat melalui PLN Mobile atau Call Center 123.",
       actionText: "Laporkan Gangguan",
       actionLink: "#kontak"
     },
@@ -31,9 +31,9 @@ export default function QuickAccess() {
       id: "area",
       title: "Area Layanan",
       image: "/gambar/pln_pelayanan_kantor.png",
-      spanClass: "md:col-span-6 min-h-[180px] md:min-h-[208px]",
-      descTitle: "Wilayah Operasional ULP Boja",
-      desc: "Kantor operasional kami di Boja meng-cover keandalan distribusi listrik untuk wilayah Kecamatan Boja, Singorojo, Limbangan, hingga perbatasan Kabupaten Kendal. Kami berkomitmen mendukung kebutuhan energi dari rumah tangga hingga industri.",
+      spanClass: "md:col-span-6 min-h-[210px] md:min-h-[208px]",
+      descTitle: "Wilayah Operasional Boja",
+      desc: "Meng-cover keandalan listrik untuk wilayah Kecamatan Boja, Singorojo, dan Limbangan guna mendukung aktivitas harian warga serta industri daerah.",
       actionText: "Lihat Detail Wilayah",
       actionLink: "#profil"
     }
@@ -50,7 +50,7 @@ export default function QuickAccess() {
             Akses Layanan Terpenting Kami
           </h2>
           <p className="text-sm sm:text-base text-zinc-500 leading-relaxed font-medium">
-            PLN ULP Boja menyediakan portal informasi terpadu. Klik pada kartu layanan untuk membaca detail penjelasan atau mengakses menu bantuan langsung.
+            PLN ULP Boja menyediakan portal informasi terpadu. Klik pada kartu layanan untuk membaca detail penjelasan atau accessing menu bantuan langsung.
           </p>
         </div>
 
@@ -89,7 +89,7 @@ export default function QuickAccess() {
 
                   {/* Click Overlay (Penjelasan Singkat) */}
                   <div 
-                    className={`absolute inset-0 bg-white/98 backdrop-blur-md p-8 flex flex-col justify-between text-left transition-all duration-500 z-20 ${
+                    className={`absolute inset-0 bg-white/98 backdrop-blur-md p-5 sm:p-6 flex flex-col justify-between text-left transition-all duration-500 z-20 ${
                       isActive 
                         ? "opacity-100 translate-y-0" 
                         : "opacity-0 translate-y-full pointer-events-none"
@@ -101,7 +101,7 @@ export default function QuickAccess() {
                   >
                     <div>
                       {/* Header overlay */}
-                      <div className="flex justify-between items-center mb-6">
+                      <div className="flex justify-between items-center mb-4">
                         <span className="text-[10px] font-bold text-pln-blue uppercase tracking-widest bg-pln-blue/5 border border-pln-blue/10 px-3 py-1 rounded-full">{card.title}</span>
                         <button 
                           onClick={() => setActiveCard(null)}
@@ -110,11 +110,11 @@ export default function QuickAccess() {
                           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                         </button>
                       </div>
-                      <h4 className="text-lg font-extrabold text-zinc-900 mb-3 tracking-tight">{card.descTitle}</h4>
+                      <h4 className="text-base sm:text-lg font-extrabold text-zinc-900 mb-2 tracking-tight">{card.descTitle}</h4>
                       <p className="text-xs sm:text-sm text-zinc-500 leading-relaxed font-medium">{card.desc}</p>
                     </div>
 
-                    <div>
+                    <div className="mt-4">
                       <a 
                         href={card.actionLink}
                         onClick={() => setActiveCard(null)}
