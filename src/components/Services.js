@@ -92,8 +92,8 @@ export default function Services() {
         {/* Bento Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-16">
           {services.map((srv) => (
-            <div 
-              key={srv.id} 
+            <div
+              key={srv.id}
               className={`group relative min-h-[320px] rounded-3xl p-8 flex flex-col justify-between overflow-hidden shadow-sm hover:shadow-xl border border-zinc-200/40 transition-all duration-350 ${srv.spanClass}`}
             >
               {/* Background Image */}
@@ -129,8 +129,8 @@ export default function Services() {
                   {srv.desc}
                 </p>
                 <div>
-                  <a 
-                    href="#kontak" 
+                  <a
+                    href="#kontak"
                     className="inline-flex items-center gap-1.5 font-bold text-xs text-pln-yellow hover:text-white transition-colors duration-200 group/link"
                   >
                     {srv.action}
@@ -151,25 +151,25 @@ export default function Services() {
               Beli token, bayar tagihan, pengaduan gangguan, pasang baru, hingga tambah daya kini bisa dilakukan di mana saja dan kapan saja. Unduh sekarang juga!
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a 
-                href="https://play.google.com/store/apps/details?id=com.icon.pln123&pli=1" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href="https://play.google.com/store/apps/details?id=com.icon.pln123&pli=1"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-white hover:bg-zinc-100 text-zinc-900 text-center px-6 py-3 rounded-full font-bold text-sm shadow-md transition-all duration-200"
               >
                 Google Play Store
               </a>
-              <a 
-                href="https://apps.apple.com/id/app/pln-mobile/id1299635030" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href="https://apps.apple.com/id/app/pln-mobile/id1299581030"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-white hover:bg-zinc-100 text-zinc-900 text-center px-6 py-3 rounded-full font-bold text-sm shadow-md transition-all duration-200"
               >
                 Apple App Store
               </a>
             </div>
           </div>
-          
+
           <div className="lg:col-span-5 flex justify-center items-center relative z-10 w-full min-h-[350px] lg:min-h-[400px] mt-8 lg:mt-0 overflow-visible">
             {/* Staggered Bleeding Phone Mockups */}
             <div className="flex flex-row items-center justify-center gap-3 sm:gap-4 lg:gap-5 lg:-mr-10 xl:-mr-16 overflow-visible w-full">
