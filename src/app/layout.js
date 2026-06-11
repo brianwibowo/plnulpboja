@@ -18,6 +18,10 @@ export const metadata = {
     shortcut: "/icon.png",
     apple: "/icon.png",
   },
+  // Tambahkan baris di bawah ini jika ingin verifikasi Google Search Console lewat Tag HTML:
+  // verification: {
+  //   google: "MASUKKAN_KODE_VERIFIKASI_GSC_DISINI", 
+  // }
 };
 
 export default function RootLayout({ children }) {

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap resmi ULP Boja
+Sitemap: https://plnulpboja.my.id/sitemap.xml
